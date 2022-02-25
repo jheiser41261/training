@@ -1,0 +1,174 @@
+What is Java?
+- Object-Oriented Programming (OOP) Language
+- Based in C; maintained by Oracle
+- Considered a high-level language (more readable by
+  humans)
+
+Why Java?
+- Old language, HUGE community
+- Free
+- High-level
+- Platform-agnostic (can run anywhere with a JRE)
+
+What are the minimum requirements?
+- JRE (Java Runtime Environment)
+---------------------------------------------------------
+What is a class?
+- A blueprint for creating objects
+
+What is an object?
+- An instance of a class
+- Objects contain states (variables) and behaviors
+  (methods)
+
+What is a constructor?
+- A method that is called when an object is instantiated
+- An instantiation with no arguments utilizes the default
+  constructor
+- The default constructor is inaccessible as soon as a
+  custom constructor is created
+- You would have to explicitly recreate a new constructor
+  with no arguments
+
+What is an initializer block?
+- A method without a name that runs as soon as an object is
+  instantiated
+- Very rarely will this be used
+---------------------------------------------------------
+What is a wrapper class?
+- Classes that "wrap" around the corresponding primitive
+  data type
+- Essentially the class version of those data types:
+    
+    Type  |  Class Name
+    -------------------
+    boolean - Boolean
+    byte - Byte
+    char - Character
+    short - Short
+    int - Integer
+    float - Float
+    long - Long
+    double - Double
+    
+[CLASS NAMES ARE CAPITALIZED DUE TO TITLE CASE NAMING CONVENTIONS]
+   
+Why do these exist?
+- Wrapper classes can have methods (because regular classes
+  can, too)
+- Certain data structures that don't accept primitive data
+  types
+---------------------------------------------------------
+What is autoboxing?
+- Having a primitive type automatically converted to the
+  correlated Wrapper Class equivalent
+        
+What is unboxing?
+- Converting a Wrapper Class to its correlated primitive
+  data type
+        
+All of this allows us to call methods for specific variables using dot notation
+---------------------------------------------------------
+What are non-access modifiers?
+- Keywords that can manipulate specific entities
+    
+Types of non-access modifiers:
+- static
+    - The entity is directly tied to the class
+    - Anything that is static can be used without being
+      instantiated
+- final
+    - Functionality changes depending on what entity it is
+      assigned to
+    - Variables: Cannot change the value
+    - Methods: Cannot be overriden
+    - Classes: Cannot be inherited (cannot be a parent
+      class)
+----------------------------------------------------------
+SDLC - Software Development Life Cycle
+- The process of taking an idea and turning it into a functioning project
+
+[GENERAL STEPS]
+
+Step 1: Gathering Requirements
+- Figuring out what the program needs to do, and what it needs to do it
+
+Step 2: Design
+- Drawing out what goes where, what the user sees, etc.
+
+Step 3: Program
+- Code the darn thing
+
+Step 4: Testing
+- Make sure you can't break the program (at least not easily)
+
+Step 5: Deployment
+- Make the program available to the world
+
+Step 6: Maintenance
+- Updates, patch management, support/bug fixing, etc.
+----------------------------------------------------------
+Two main SDLC methodologies:
+- Waterfall Model
+- Agile Model
+
+Both of these are relatively similar, but are implemented differently
+
+Waterfall Model:
+- The earliest SDLC approach to software development
+- It is a very rigid model; there is NO going back
+    - Any requirements missed will stay missed
+    - What if parameters change over the development period?
+        - Too bad; we're using the waterfall model
+    - What if the project becomes obsolete because of other tech?
+        - Sucks to suck
+    - We don't like the waterfall model
+
+Agile Model:
+- Can be thought of as breaking the project into smaller pieces
+    - But each small piece is still a working build
+        - It is not the whole project, but a functioning feature
+- This cycle generally lasts 2-4 weeks for each iteration
+    - This allows for the client to keep better tabs on progress
+
+We will be using Scrum, which is a specific implementation of Agile
+
+Scrum:
+- Still utilizes 2-4 week "sprints" to develop applications
+    - A sprint is just the Scrum term for cycle
+    - Each sprint is itself a miniature waterfall model
+
+Scrum Terminology:
+- Scrum Actors (People involved in the Scrum process)
+    - Product Owner: The "idea guy"
+    - Dev Team: Us
+    - Scrum Master: Keeps the Dev Team on track (resources, time, access, etc.)
+        - SHOULD possess coding knowledge, but is not required to
+    - Business Analyst: Translates the Product Owner's vision
+        - Puts it into terms the Dev Team can understand (known as User Stories)
+
+- User Stories:
+    - "As a [ROLE], I can [ACTION], so that [RESULT]"
+        - "As a [User], I can [log into my account], so that [I can see my timeline]"
+        - "As an [Admin], I can [approve reimbursements], so that [employees can get refunds]"
+    - All the User Stories combined could be considered the Project Requirements
+
+- Scrum Documents:
+    - Burndown Chart
+        - Represents how quickly the Dev Team is working through User Stories
+        - Allows the project to receive a projected date of completion
+    - Product Backlog
+        - Lists ALL User Stories within the entire application
+    - Sprint Backlog
+        - List of all User Stories for a specific sprint
+
+- Scrum Meetings
+    - Daily Standup
+        - Clarifies previous-day work, roadblocks, and current-day plans
+        - Keeping up with your team
+            - Usually between the Scrum Master and the Dev Team
+        - Should not take any longer than 15 minutes
+    - Sprint Planning
+        - Planning out the sprint backlog for the next sprint
+    - Sprint Review
+        - Reflecting over the previous sprint; what worked, what didn't?
