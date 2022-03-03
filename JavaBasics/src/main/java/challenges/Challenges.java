@@ -1,7 +1,6 @@
 package challenges;
 
-public class Challenges
-{
+public class Challenges {
     public static void main(String[] args) {
         System.out.println("-------- Challenge 1 --------");
 
@@ -24,6 +23,13 @@ public class Challenges
         //Calling Challenge 3
         int[] numbers = {67, 42, 48, 95, 87, 13};
         oddEven(numbers);
+
+        System.out.println("-------- Challenge 4 --------");
+        String sentence = "This challenge was a pain in the ass";
+        System.out.println(PigLatin.encrypt(sentence));
+        System.out.println(PigLatin.decrypt(PigLatin.encrypt(sentence)));
+
+        System.out.println();
     }
 
     //Challenge 1 - 2/23/22 - Copied
