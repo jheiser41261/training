@@ -13,5 +13,16 @@ public class PracticeCode {
         }
 
         System.out.println();
+
+        //Testing ternary syntax
+        int num = 8;
+        int num1 = 5;
+
+        //Ternary syntax; alternate way of evaluating conditions within a print statement
+        System.out.println(num % 2 == 0 ? num + " is even" : num + " is odd");
+
+        //Ternary syntax can also be stored as a String
+        String result = num1 % 2 == 0 ? num1 + " is even" : num1 + " is odd";
+        System.out.println(result);
     }
 }

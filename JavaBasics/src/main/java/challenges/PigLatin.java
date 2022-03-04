@@ -2,11 +2,8 @@ package challenges;
 
 public class PigLatin {
     public static String encrypt(String sentence){
-        if(!isValidSentence(sentence)){
-            return "Invalid Sentence";
-        }
 
-        StringBuilder pigSentence = new StringBuilder("");
+        StringBuilder pigSentence = new StringBuilder();
 
         String[] words = sentence.split( " ");
 
@@ -21,11 +18,8 @@ public class PigLatin {
     }
 
     public static String decrypt(String sentence){
-        if(!isValidSentence(sentence)){
-            return "Invalid Sentence";
-        }
 
-        StringBuilder boringLanguage = new StringBuilder("");
+        StringBuilder boringLanguage = new StringBuilder();
 
         String[] words = sentence.split( " ");
 
@@ -33,7 +27,7 @@ public class PigLatin {
             word = word.replace("ay","");
             boringLanguage
                     .append(word.charAt(word.length() - 1))
-                    .append(word.substring(0, word.length() - 1))
+                    .append(word, 0, word.length() - 1)
                     .append(" ");
         }
         return boringLanguage.toString();
