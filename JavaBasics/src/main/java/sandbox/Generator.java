@@ -4,7 +4,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class RandomGenerator {
+public class Generator {
+    public static int[] randomArray(int length, int low, int high){
+        int[] arr = new int[length];
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = RandomNumber.randomNumber(low, high);
+        }
+        return arr;
+    }
+
     public static List<Integer> randomSortedList(int length, int low, int high){
         List<Integer> nums = new ArrayList<>();
 
@@ -14,9 +23,6 @@ public class RandomGenerator {
 
         Collections.sort(nums);
 
-        for(int num : nums){
-            System.out.println(num);
-        }
         return nums;
     }
 }

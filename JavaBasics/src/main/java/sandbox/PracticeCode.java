@@ -1,12 +1,16 @@
 package sandbox;
 
-import challenges.PigLatin;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PracticeCode {
     public static void main(String[] args) {
-        //Random Sorted List - 3/3/22
-        System.out.println("---------- Random Sorted List ----------");
-        RandomGenerator.randomSortedList(10, 0, 100);
+        System.out.println("---------- Random Sorted List ----------"); //Personal Challenge - 3/3/22
+        List<Integer> nums = new ArrayList<>(Generator.randomSortedList(10, 0, 100));
+
+        for(int num : nums){
+            System.out.println(num);
+        }
 
         System.out.println();
     }
