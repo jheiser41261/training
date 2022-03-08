@@ -57,11 +57,20 @@ public class ChallengeMethods {
         }
 
         //Displaying odd numbers
-        System.out.print("\n" + "Odd Numbers: ");
+        System.out.print("\nOdd Numbers: ");
         for(int oddNum : oddNums){
             System.out.print(oddNum + " ");
         }
 
         System.out.println();
+    }
+
+    //Challenge 4 is contained within the "PigLatin" class
+
+    //Challenge 5 - 3/4/22 - Original
+    public static Boolean isPalindrome(String word){
+        word = word.toLowerCase(); //Converts the word to all lowercase
+        StringBuilder test = new StringBuilder(word).reverse(); //Creates a StringBuilder containing the reverse of the word
+        return test.toString().equals(word); //Checks if the reversed StringBuilder still matches the word
     }
 }

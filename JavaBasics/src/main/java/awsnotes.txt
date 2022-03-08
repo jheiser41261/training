@@ -1,0 +1,32 @@
+What is a server room?
+- Server rooms are used to operate computer servers for a company internally
+
+What are some issues with physical server rooms?
+- Takes up a lot of space
+- The hardware could be destroyed and your data could be lost
+- Costs a lot of money to maintain power and cool temperatures
+
+What happens when we run out of space?
+- You have to physically add more resources
+
+What is AWS?
+- Amazon Web Services
+    - Over 200 different services you can utilize
+    - Pay as you go
+
+Types of Cloud Services:
+- Infrastructure as a Service (IaaS)
+    - Generally used for hardware resources (EC2)
+        - Hard drives, RAM, number of cores, etc.
+- Software as a Service (SaaS)
+    - Providing a fully-functioning application on the cloud
+        - Google Drive, GSuite, Office 365, S3, etc.
+- Platform as a Service (PaaS)
+    - Provides a platform for software creation but not the entire application itself
+        - RDS
+
+Amazon Web Services:
+- RDS (Relational Database Service)
+    - Allows us to have an instance of a DBMS (Data Base Management System) on the cloud
+        - A DBMS can create multiple databases within a single system
+    - We will be using PostgreSQL
