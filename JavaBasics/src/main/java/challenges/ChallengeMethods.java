@@ -73,4 +73,6 @@ public class ChallengeMethods {
         StringBuilder test = new StringBuilder(word).reverse(); //Creates a StringBuilder containing the reverse of the word
         return test.toString().equals(word); //Checks if the reversed StringBuilder still matches the word
     }
+
+    //Challenge 6 is contained within the "PigLatinJavalin" class
 }
